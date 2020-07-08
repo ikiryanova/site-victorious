@@ -1,0 +1,87 @@
+.contacts 
+    padding: 50px 0
+    margin: 0 auto
+    &-header 
+        width: 522px
+    &-wrapper 
+        display: flex
+    &__text 
+        font-size: 17px
+        font-weight: bold
+        color: $navbar-contacts
+        margin-bottom: 15px
+    &-phone 
+        margin-right: 60px
+        width: 168px
+        text-align: center
+        &__btn 
+            width: 166px
+            height: 47px
+            margin-top: 10px
+        &__number
+            font-weight: bold 
+            font-size: 20px
+            color: #000
+    &-social 
+        margin: 0 auto 15px
+    &-mail
+        &__link 
+            color: #3B3B3B
+            text-decoration: underline
+            margin-right: 10px
+    &-mail__link:last-child
+        margin: 0
+    &-consult 
+        margin-right: 67px
+        width: 316px
+        &__number 
+            font-style: 15px
+            color: #000
+            font-weight: bold
+    &-address 
+        width: 300px
+        &__address 
+            display: inline
+            font-size: 15px
+            margin-top: 15px
+.hide 
+    display: none
+
+@media (min-width: 910px)
+    .contacts 
+        width: 905px
+@media (max-width: 1200px) 
+    .contacts
+        &-wrapper, &-address 
+            flex-direction: column
+            width: 287px
+            margin: 0 auto
+        &-phone 
+            margin: 0 auto 23px
+        &-consult &__text 
+            display: none 
+        &-address 
+            margin-top: 20px
+    .contacts i 
+        color: $navbar-contacts
+        border: none
+        border-radius: 0
+        background: #fff
+        padding: 4px
+        width: 27px
+        height: 27px
+    .hide 
+        display: block !important
+@media (max-width: 576px) 
+    .contacts 
+        width: 295px 
+        &-header 
+            width: 112px
+        &-phone, &-social, &-mail
+            font-size: 15px
+        &-consult 
+            width: 275px
+        &-mail__link 
+            margin: 0
+        & .navbar-contacts-item__icon
+            margin: 0

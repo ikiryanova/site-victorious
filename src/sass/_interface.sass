@@ -1,0 +1,95 @@
+*
+  box-sizing: border-box
+body 
+  margin: 0
+  padding: 0
+  +reg
+.container
+  max-width: 1140px
+  margin: 0 auto
+a 
+  text-decoration: none
+h1, h2, p, span, ul, li
+  margin: 0
+  padding: 0
+ul 
+  list-style: none
+.bold 
+  +bold
+.btn 
+  +bold
+  background: $btn-color
+  border: none
+  border-radius: 30px
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.1)
+  background-image: linear-gradient(to bottom, #ffd801 0%, #ffba01 100%)
+  outline: none
+.input 
+  outline: none
+.header
+  margin: 0 auto 38px 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  // width: 595px
+  font-weight: 500
+  font-family: Roboto Bold
+  &__left, &__right
+    width: 165px
+    height: 12px
+  &__right 
+    transform: rotate(180deg)
+  &__title 
+    font-size: 30px
+    font-weight: 500
+    text-transform: uppercase
+    color: $section-title
+.error 
+  position: absolute
+  top: -22px
+  right: 94px
+  padding: 5px 10px
+  background: #E90000
+  color: #fff
+  font-size: 15px
+  display: none
+  &:after 
+    content: ''
+    position: absolute 
+    border: 7px solid transparent
+    border-top: 7px solid #E90000
+    top: 27px
+    right: 50px
+
+.status 
+  margin-top: 10px
+
+@media (max-width: 1200px)
+  .container
+    max-width: 920px
+@media (max-width: 992px)
+  .container 
+    max-width: 700px
+@media (max-width: 768px)
+  .container
+    max-width: 550px
+  .header
+    font-weight: 700
+    width: 152px
+    &__left, &__right 
+      display: none
+    &__title 
+      margin: 0 auto
+      font-size: 20px
+@media (max-width: 576px)
+  .container
+    max-width: 420px
+  .status 
+    font-size: 14px
+@media (max-width: 320px)
+  .container
+    max-width: 302px
+@media (min-width: 993px)
+  .btn 
+    &:hover 
+      background-image: linear-gradient(to bottom, #ffc601 0%, #ffa201 100%) 

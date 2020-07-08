@@ -1,0 +1,118 @@
+.work 
+  background-color: $work-bgc
+  padding: 50px 0 52px
+  &-header 
+    max-width: 655px
+    margin: 0 auto 22px
+  &-steps 
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    width: 1132px
+  &-step 
+    display: flex
+    position: relative
+    flex-direction: column
+    align-items: center
+    &-wrapper
+      height: 74px
+    &-img
+      margin-bottom: auto       
+    &__text 
+      text-align: center
+      width: 164px
+      padding-top: 27px
+      font-family: 'Roboto Medium', sans-serif
+      color: #3b3b3b
+      font-weight: 500px  
+      font-size: 14px
+      line-height: 19px   
+  &-arrow-up, &-arrow-down 
+    position: absolute
+  &-arrow-up
+    top: 11px
+    left: 124px
+  &-arrow-down
+    top: 34px
+    left: 124px
+@media (min-width: 1201px)
+  .work-wrapper 
+    position: relative
+    &:after 
+      content: '' 
+      position: absolute
+      bottom: -8px
+      left: 4%
+      width: 89px
+      height: 2px
+      background-color: $main-text-color
+  .arrow32 
+    &-1, &-2, &-3, &-4, &-5, &-6
+      display: none
+
+@media (max-width: 1200px)
+  .work 
+    padding: 37px 0 42px
+    &-steps 
+      flex-direction: column
+      width: 255px 
+    &-step 
+      flex-direction: row
+      align-items: center
+      &:nth-child(1)
+        margin-bottom: 17px
+      &:nth-child(2)
+        margin-bottom: 20px
+      &:nth-child(3)
+        margin-bottom: 27px
+      &:nth-child(4)
+        margin-bottom: 26px
+      &:nth-child(5)
+        margin-bottom: 18px
+      &-wrapper 
+        width: 72px
+        height: auto
+      &-img__image
+        &-1
+          width: 72px
+          height: 58px
+        &-2
+          width: 62px
+          height: 58px
+        &-3
+          width: 57px
+          height: 51px
+        &-4
+          width: 59px
+          height: 52px
+        &-5
+          width: 56px
+          height: 56px
+        &-6
+          width: 51px
+          height: 47px
+      &__text 
+        padding: 0
+        margin-left: 9px
+        text-align: left
+  .arrow
+    display: none
+  .arrow32
+    &-1, &-2, &-3, &-4, &-5, &-6
+      display: inline-block
+      position: absolute 
+      right: 50px    
+    &-1
+      top: 30px 
+    &-2
+      top: 12px
+    &-3
+      top: 38px 
+    &-4
+      top: 13px
+    &-5 
+      top: 38px
+@media (max-width: 768px)
+  .work 
+    &-header 
+      width: 200px

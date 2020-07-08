@@ -1,0 +1,120 @@
+.rates 
+  padding: 67px 0 56px
+  &-header 
+    width: 595px
+  &-cards
+    // display: flex
+    // justify-content: space-between
+  &-card
+    width: 362px 
+    border: 2px solid #eaeaea
+    // padding-left: 19px
+    &-1
+      height: 583px 
+    &-2
+      height: 630px
+    &-3 
+      height: 723px
+    &__title
+      text-align: center
+      font-size: 26px
+      font-weight: 600
+      font-family: "Roboto Bold", sans-serif
+      line-height: 57px
+      text-transform: uppercase
+      color: $main-text-color
+      position: relative
+      margin-bottom: 25px
+      margin-top: 5px
+      &:after 
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 23%
+        width: 207px
+        height: 1px
+        background-color: $main-text-color
+    &-list 
+      list-style-type: disc
+      width: 305px
+      margin: 0 auto 18px 37px
+      &-li
+        color: $main-text-color
+        margin-bottom: 3px
+      &__item
+        color: $black-text
+        font-size: 14px
+        line-height: 20px
+    &-price
+      text-align: center
+      color: $section-title
+      margin-top: 32px
+      &__price 
+        font-family: "Roboto Medium"
+        font-weight: 500
+        font-size: 26px
+      &__value 
+        +reg
+    &__btn
+      width: 172px
+      height: 48px
+      margin: 35px auto 18px
+      display: block
+// .slider 
+//   display: flex
+//   justify-content: space-between
+.arrows
+  display: none
+
+@media (min-width: 1201px)
+  .rates 
+    &-cards
+      &-flex
+        display: flex
+        justify-content: space-between
+@media (max-width: 1200px) 
+  .arrows
+    display: inline-block 
+    position: absolute
+    top: 200px
+    left: -37px
+    width: 434px
+    display: flex
+    justify-content: space-between
+  .rates 
+    &-cards 
+      position: relative
+      width: 362px
+      margin: 0 auto
+    &-card 
+      width: 362px !important
+      &__title 
+        font-size: 22px
+@media (max-width: 768px)     
+  .rates 
+    padding: 37px 0
+    &-header 
+      width: 152px
+      margin-bottom: 23px
+    &-cards 
+      width: 290px
+    &-card 
+      width: 290px !important
+      &-1
+        height: 615px
+      &-2 
+        height: 700px
+      &-3 
+        height: 795px
+      &-list 
+        width: 242px
+  .arrows
+    left: -5px
+    width: 371px
+    width: 299px
+
+@media (min-width: 993px)  
+  .rates-card 
+    &:hover
+      box-shadow: 0 0 21px rgba(0, 0, 0, 0.27)
+      border: 2px solid #ffd501

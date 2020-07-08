@@ -1,0 +1,92 @@
+.hero 
+  padding: 14px 0
+  color: $hero-text
+  &-block 
+    display: flex
+    align-items: center
+  &-logo 
+    display: flex
+    align-items: center
+    border-right: 1px solid #d5d5d5
+    padding-right: 58px
+    &__img
+      background-image: url("../img/hero/hero-logo.png")
+      width: 227px
+      height: 68px
+    &__subtitle 
+      width: 190px
+      +reg
+      font-size: 16px 
+      line-height: 22px
+      margin-left: 25px
+  &-time
+    border-right: 1px solid #d5d5d5
+    height: 72px
+    &__time 
+      margin-top: 14px
+      padding: 0 26px 0
+      width: 232px
+  &-contacts
+    display: flex
+    align-items: center
+    &__phone 
+      padding: 0 18px 0 26px 
+      font-size: 24px
+      +bold
+      color: $hero-text
+    &__btn 
+      text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.3)
+      color: $btn-text
+      +bold
+      font-size: 15px
+      width: 165px
+      height: 45px
+
+@media (max-width: 1200px)
+  .hero
+    &-logo 
+      padding-right: 30px 
+    &-time 
+      display: none
+@media (max-width: 992px) 
+  .hero 
+    &-block 
+      flex-direction: column
+    &-logo 
+      justify-content: space-between
+      width: 80%
+      border-right: none
+      padding: 0 0 10px 0
+    &-contacts 
+      border-top: 1px solid #d5d5d5
+      justify-content: space-between
+      width: 80%
+      padding-top: 12px
+@media (max-width: 768px)
+  .hero 
+    &-logo 
+      width: 100%
+    &-contacts 
+      width: 100%
+@media (max-width: 576px)
+  .hero 
+    &-logo 
+      justify-content: flex-start
+      width: 276px
+      &__img 
+        background-image: url("../img/hero/hero-logo-576px.png")
+        width: 55px
+        height: 51px
+      &__subtitle 
+        margin-left: 15px
+        font-size: 15px
+        line-height: 19px
+    &-contacts 
+      width: 290px
+      &__phone 
+        font-size: 18px
+        padding: 0 13px 0 0 
+      &__btn 
+        width: 127px
+        height: 36px
+        font-size: 12px

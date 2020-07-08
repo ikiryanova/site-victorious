@@ -1,0 +1,100 @@
+.overlay
+	position: fixed
+	width: 100%
+	height: 100%
+	background: rgba(#000, 0.7)
+	z-index: 150
+	display: none
+	justify-content: space-between
+	transition: all 0.5s
+.mobile-menu
+	position: relative
+	background: $navbar-color
+	width: 284px
+	height: 100vh
+	top: 0
+	left: -100%
+	margin: 0
+	z-index: 99
+	transition: all 0.9s
+.m-menu
+    &-close
+        height: 55px
+        position: relative
+        background-color: #0d151d
+        margin-bottom: 17px
+        &__close, &::after
+            content: ''
+            background: #fff
+            position: absolute
+            width: 25px
+            height: 3px
+            right: 18px
+            top: 25px
+        &__close
+            transform: rotate(45deg)
+        &::after
+            transform: rotate(-45deg)
+    &-list
+        flex-direction: column
+        padding: 0
+        list-style-type: none
+        +reg
+        &__item
+            position: relative
+            padding: 17px 0
+            &:after
+                content: ""
+                position: absolute
+                bottom: 0
+                display: block
+                width: 100%
+                height: 1px
+                background: rgba(#ffffff, 0.08)
+            &:first-child
+                padding-top: 0
+            &:last-child a
+                &:after
+                    content: none
+            a
+                display: block
+                padding-left: 20px
+                color: #ffffff
+                text-decoration: none			
+    &-hover
+        padding: 0
+        list-style-type: none
+        &__item
+            position: relative
+            padding: 10px 0 10px 20px
+            &:after
+                content: ""
+                position: absolute
+                bottom: 0
+                left: 0
+                display: block
+                width: 100%
+                height: 1px
+                background: rgba(#000, 0.11)
+            &:last-child
+                &:after
+                    content: none
+.mobile-menu a.drop-menu
+	color: #fff
+.overlay-vizible
+	display: block
+.active-menu
+	left: -0%
+.mobile 
+  &-login 
+    +reg
+    position: absolute
+    margin: 20px 0 10px 20px
+    &__login, &__reg
+      color: #ffffff
+      text-decoration: none
+      font-size: 14px
+    &__login
+      border-right: 1px solid #bcbcbc
+      padding-right: 10px
+      margin-right: 10px

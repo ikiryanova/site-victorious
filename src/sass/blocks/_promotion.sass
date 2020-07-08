@@ -1,0 +1,180 @@
+.promotion 
+  padding: 68px 0 80px
+  background-image: url('../img/promotion/promotion-bg-lg.jpg') 
+  background-position: center
+  background-size: cover
+  &-block 
+    display: flex
+    justify-content: space-between
+  &-text 
+    max-width: 757px
+    color: #fff
+    +reg
+    font-family: 'Roboto Regular', sans-serif
+    font-weight: 300
+    font-size: 16px
+    line-height: 27px
+    &__title 
+      max-width: 540px
+      color: $promotion-text
+      font-size: 43px
+      font-weight: 500
+      line-height: 40px
+    &-description 
+      margin: 14px 0 15px
+    &-offer 
+      display: flex
+      justify-content: space-between
+    &-price
+      &__item 
+        color: $promotion-text
+        font-weight: 700
+        width: 87px 
+        margin-right: 15px
+      
+      &-wrap
+        &-1, &-2, &-3
+        display: flex
+      //   justify-content: space-between
+
+      //   &-1
+      //     max-width: 377px
+        // &-2 
+        //   max-width: 100%
+      //   &-3 
+      //     max-width: 213px
+  &-form 
+    display: flex
+    flex-direction: column
+    width: 360px
+    height: 210px
+    padding: 40px 30px 0 
+    margin-top: 30px
+    border: 1px solid #ffffff4d
+    border-bottom: none
+    position: relative
+    &:before 
+      content: ''
+      width: 25px
+      height: 1px
+      background-color: #ffffff4d
+      position: absolute
+      bottom: 0
+      left: 0
+    &:after 
+      content: ''
+      width: 25px
+      height: 1px
+      background-color: #ffffff4d
+      position: absolute
+      bottom: 0
+      right: 0
+    &-wrap
+      position: relative
+    &__icon 
+      position: absolute
+      top: 12px
+      left: 18px
+    &__input 
+      height: 50px
+      margin-bottom: 14px
+      border-radius: 30px
+      border: none
+      width: 100%
+      height: 50px
+      padding-left: 52px
+      color: #606060
+      +reg
+      font-size: 14px
+    &__btn 
+      width: 273px
+      border-radius: 30px
+      font-size: 15px
+      +bold
+      line-height: 16px
+      margin: 7px 10px 0 14px 
+      padding-top: 16px 
+      padding-bottom: 14px
+      white-space: pre-wrap
+ 
+@media (max-width: 576px) 
+  .promotion 
+    &-form 
+      &__input 
+        width: 252px 
+        height: 42px
+
+// .fa-user 
+//   opacity: 0.8 !important
+.fa 
+  font-size: 20px !important
+
+@media (max-width: 1200px)
+  .promotion
+    &-text 
+      &-price 
+        &__value 
+          max-width: 80%
+@media (max-width: 992px)
+  .promotion
+    padding-left: 15px 
+    padding-right: 15px 
+    &-block 
+      flex-direction: column
+      align-items: center
+    &-text 
+      &-price 
+        &__value 
+          max-width: 100%
+@media (max-width: 576px)
+  .promotion
+    padding: 36px 15px 74px
+    background-image: url('../img/promotion/promotion-bg-sm.jpg') 
+    &-form 
+      margin-top: 0
+      border: none
+      padding: 0
+      width: 248px
+      height: 58px
+      &:before, &:after 
+        display: none
+      &-wrap 
+        display: none
+      & &__btn 
+        display: none
+        width: 100%
+        font-size: 14px
+        line-height: 14px
+        margin: 0
+    &-text 
+      &__title 
+        text-align: center
+        font-size: 22px
+        line-height: 24px
+        margin: 0 auto 15px
+      &-description
+        font-size: 14px
+        line-height: 18px
+        margin: 0 auto
+        &__item
+          text-align: center
+          &:last-child
+            display: none
+      &-price 
+        display: none 
+  .promotion__hide 
+    border-radius: 30px
+    width: 100%
+    height: 58px
+    font-size: 14px
+    line-height: 14px
+    margin: 0
+    padding: 15px
+    margin-bottom: 20px
+
+@media (min-width: 577px) 
+  .promotion__hide 
+    display: none
+          
+          
+         

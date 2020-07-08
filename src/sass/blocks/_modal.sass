@@ -1,0 +1,71 @@
+.modal
+    position: fixed
+    width: 100%
+    height: 100%
+    background: rgba(#000, 0.7)
+    z-index: 150
+    justify-content: space-between
+    display: none
+    &-wrapper 
+        width: 405px
+        height: 365px
+        margin: 160px auto
+        background-image: url('../img/promotion/promotion-bg-lg.jpg')
+        background-position: center
+        position: relative
+    &-header 
+        background-color: $promotion-text
+        padding-top: 26px
+        padding-bottom: 20px
+        &__title 
+            text-align: center
+            font-size: 21px
+            +reg
+    &-form
+        margin: 15px auto
+        &__btn 
+            width: 100%
+            height: 45px
+            font-size: 14px
+            line-height: 14px
+            padding: 15px
+            margin: 10px 0 10px
+.close, .close::after
+  content: ''
+  background: #fff
+  position: absolute
+  width: 25px
+  height: 3px
+  right: -25px
+  top: -20px
+.close
+  transform: rotate(45deg)
+  &::after
+    top: 0
+    right: 0
+    transform: rotate(90deg)
+
+.modal_active
+    display: block
+
+.modal_close 
+    display: none
+
+@media (max-width: 576px) 
+    .modal 
+        &-wrapper 
+            width: 293px
+            height: 305px
+            background: #141F2A
+        & .promotion-form-wrap 
+            display: block
+    .form 
+        margin: 20px auto
+    .close, .close::after
+        background: #000
+        width: 20px
+        right: 6px
+        top: 14px
+    .close::after
+        top: 0
+        right: 0

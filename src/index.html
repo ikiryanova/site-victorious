@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Victorious</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+</head>
+
+<body>
+
+
+  <!-- Мобильное меню -->
+  <div class="overlay">
+    <div class="mobile-menu">
+      <div class="m-menu-close">
+        <span class="m-menu-close__close"></span>
+      </div>
+      <ul class="m-menu-list">
+        <li class="m-menu-list__item">
+          <a class="m-menu-list__item-link" href="#">О нас</a>
+        </li>
+        <li class="m-menu-list__item">
+          <a class="m-menu-list__item-link" href="#">Тарифы</a>
+        </li>
+        <li class="m-menu-list__item">
+          <a class="m-menu-list__item-link" href="#">Новости</a>
+        </li>
+        <li class="m-menu-list__item">
+          <a class="m-menu-list__item-link" href="#">Вопросы и ответы</a>
+        </li>
+        <li class="m-menu-list__item">
+          <a class="m-menu-list__item-link" href="#">Наши проекты</a>
+        </li>
+        <li class="m-menu-list__item">
+          <a class="m-menu-list__item-link contacts-modal" href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Модальное окно -->
+  <div class="modal">
+    <div class="modal-wrapper">
+      <span class="close"></span>
+      <div class="modal-header">
+        <h2 class="modal-header__title">
+          Заявка на проект
+        </h2>
+      </div>
+      <div class="promotion-form modal-form">
+        <form action="#" class="form" name="formModal">
+          <div class="promotion-form-wrap">  
+            <label for="name" class="error error-name"></label>
+            <input type="text" name="name" class="input usrname promotion-form__input" placeholder="Ваше имя">
+            <img src="img/promotion/icon-man.svg" alt="man" class="promotion-form__icon">
+          </div>
+          <div class="promotion-form-wrap">
+            <label for="phone" class="error error-phone"></label>
+            <input type="phone" name="phone" class="input userphone promotion-form__input" placeholder="Ваш номер телефона">
+            <img src="img/promotion/icon-phone.svg" alt="phone" class="promotion-form__icon">
+          </div> 
+          <input type="submit" class="btn modal-form__btn btn-submit" value="Отправить заявку">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Навигационное меню -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-block">
+
+        <ul class="navbar-menu">
+          <li>
+            <div class="navbar-menu-btn">
+              <span class="navbar-menu__btn"></span>
+            </div>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="" class="navbar-menu__link">О нас</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="" class="navbar-menu__link">Тарифы</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="" class="navbar-menu__link">Вопросы и ответы</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="" class="navbar-menu__link">Наши проекты</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="" class="navbar-menu__link">Отзывы</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="" class="navbar-menu__link">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-contacts">
+
+          <li class="navbar-contacts-item">
+            <a href="#" class="navbar-contacts-item__link navbar-contacts-item__consult">Бесплатная консультация:</a>
+          </li>
+          <li class="navbar-contacts-item">
+            <a href="#" class="navbar-contacts-item__link">
+              <i class=" navbar-contacts-item__icon fa fa-whatsapp fa-lg" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="navbar-contacts-item">
+            <a href="tel:+7-916-945-11-10" class="navbar-contacts-item__link navbar-contacts-item__tel">+7 916
+              945-11-10</a>
+          </li>
+          <li class="navbar-contacts-item">
+            <a href="tel:+7-916-945-11-10" class="navbar-contacts-item__link">
+              <i class=" navbar-contacts-item__icon fa fa-skype fa-lg" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="navbar-contacts-item">
+            <a href="#" class="navbar-contacts-item__link navbar-contacts-item__skype">victoriouspro</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Шапка с логотипом -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-block">
+        <div class="hero-logo">
+          <div class="hero-logo__img">
+            <!-- <img src="img/hero/hero-logo.png" alt="Victorious"> -->
+          </div>
+          <h2 class="hero-logo__subtitle">Эффективное поисковое продвижение сайтов</h2>
+        </div>
+        <div class="hero-time">
+          <p class="hero-time__time"><span class="bold">Время работы:</span> <br>Пн.-Пт.: с 10:00 до 19:00</p>
+        </div>
+        <div class="hero-contacts">
+          <a href="tel:+7-495-123-45-67" class="hero-contacts__phone">+7 495 123-45-67</a>
+          <button class="hero-contacts__btn btn modal-open">Заявка на проект</button>
+        </div>
+       
+      </div>
+    </div>
+  </section>     
+  
+  <!-- Секция Продвижение сайта -->
+  <section class="promotion">
+    <div class="container">
+      <div class="promotion-block">
+        <div class="promotion-text">
+          <h2 class="promotion-text__title">Продвижение сайта в ТОП по позициям</h2>
+
+          <ul class="promotion-text-description">
+            <li class="promotion-text-description__item">Нужно продвижение сайта по поисковым запросам?</li>
+            <li class="promotion-text-description__item">Хотите видеть свой сайт на первых строках поисковой выдачи?</li>
+            <li class="promotion-text-description__item">В этом случае идеальное решение – это продвижение сайта по ключевым словам с 
+              оплатой за занимаемую позицию в ТОП 10 поисковых систем. Или по-другому - с оплатой за первую страницу.</li>
+          </ul>
+
+          <ul class="promotion-text-price">
+            <li class="promotion-text-price-wrap promotion-text-price-wrap-1">
+              <span class="promotion-text-price__item">Стоимость:</span> 
+              <p class="promotion-text-price__value">Всего от 40&#8381/мес. за слово в ТОП-10</p>
+            </li>
+            <li class="promotion-text-price-wrap promotion-text-price-wrap-2">
+              <span class="promotion-text-price__item">Результат:</span> 
+              <p class="promotion-text-price__value">Увеличение видимости сайта в поисковых системах. ТОП-10 по выбранным запросам</p>
+            </li>
+            <li class="promotion-text-price-wrap promotion-text-price-wrap-3">
+              <span class="promotion-text-price__item">Сроки:</span> 
+              <p class="promotion-text-price__value">от 2-х месяцев</p>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="promotion-form">
+          <form action="#" class="form" name="formPromo">
+            <div class="promotion-form-wrap">  
+              <label for="name" class="error error-name"></label>
+              <input type="text" name="name" class="input usrname promotion-form__input" placeholder="Ваше имя">
+              <img src="img/promotion/icon-man.svg" alt="man" class="promotion-form__icon">
+            </div>
+            <div class="promotion-form-wrap">
+              <label for="phone" class="error error-phone"></label>
+              <input type="phone" name="phone" class="input userphone promotion-form__input" placeholder="Ваш номер телефона">
+              <img src="img/promotion/icon-phone.svg" alt="phone" class="promotion-form__icon">
+            </div> 
+            <input type="submit" class="btn promotion-form__btn btn-submit" id="promotion-submit" value="Получить коммерческое предложение">
+          </form>
+          <button class="promotion__hide  btn modal-open">Получить коммерческое предложение</button>
+        </div>
+
+      </div>
+    </div>
+  </section> 
+
+
+<!-- Наши услуги, тарифы --> 
+  <section class="rates">
+    <div class="container">
+
+      <div class="header rates-header">
+        <img src="img/rates/rates-title-left.png" alt="title" class="header__left">
+        <h2 class="header__title">Наши тарифы</h2>
+        <img src="img/rates/rates-title-left.png" alt="title" class="header__right">
+      </div>
+
+      <div class="rates-cards">
+        <div class="rates-card-wrapper">
+          <div class="rates-cards-flex">
+            <div class="rates-card rates-card-1 slider__item">
+              <div class="rates-card__title">Эконом</div>
+              <ul class="rates-card-list">
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Продвижение в Яндекс и Google</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Комплекс работ по оптимизации сайта, мониторингу и аналитике. Чек лист из 14 
+                  позиций регульярной проверки. Комплексный анализ сайта и мониторинг обратных ссылок.</p>
+                </li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">100 ключевых слов</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">От 1 страницы до 1000 страницы</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">3 продающих текста (9 000 знаков копирайтинга) ежемесячно</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Система мониторингa</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Анализ коммерческих факторов сайта по  чек-листу в 50 позиций</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Скидка 5% на дополнительные услуги компании.</p></li>
+              </ul>
+  
+              <div class="rates-card-price">
+                <span class="rates-card-price__price">25 000&#8381</span>
+                <span class="rates-card-price__value">в месяц</span>
+              </div>
+              <button class="btn rates-card__btn modal-open">Заказать!</button>
+            </div>
+  
+            <div class="rates-card rates-card-2 slider__item">
+              <div class="rates-card__title">Оптиум</div>
+              <ul class="rates-card-list">
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Продвижение в Яндекс и Google</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Комплекс работ по оптимизации сайта, мониторингу и аналитике. Чек лист из 14 
+                  позиций регульярной проверки. Комплексный анализ сайта и мониторинг обратных ссылок.</p>
+                </li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">200 ключевых слов</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">От 1000 страницы до 2000 страницы</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">10 продающих текста (30 000 знаков копирайтинга) ежемесячно</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Подробное юзабилити-тестированиие сайта</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Анализ коммерческих факторов сайта по  чек-листу в 50 позиций</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Система мониторинга</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Анализ конкурентов</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Скидка 10% на дополнительные услуги компании.</p></li>
+              </ul>
+  
+              <div class="rates-card-price">
+                <span class="rates-card-price__price">45 000&#8381</span>
+                <span class="rates-card-price__value">в месяц</span>
+              </div>
+              <button class="btn rates-card__btn modal-open">Заказать!</button>
+            </div>
+  
+            <div class="rates-card rates-card-3 slider__item">
+              <div class="rates-card__title">Макси</div>
+              <ul class="rates-card-list">
+                  <li class="rates-card-list-li"><p class="rates-card-list__item">Продвижение в Яндекс и Google</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Комплекс работ по оптимизации сайта, мониторингу и аналитике. Чек лист из 14 
+                  позиций регульярной проверки. Комплексный анализ сайта и мониторинг обратных ссылок.</p>
+                </li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">500 ключевых слов</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">От 2000 до 5000 страницы  - объем сайта.</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">20 продающих текста (21 000 знаков копирайтинга) ежемесячно</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Анализ коммерческих факторов сайта по  чек-листу в 50 позиций</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Система мониторинга</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Подробное юзабилити-тестированиие сайта</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Ведение рекламной кампании (Яндекс.Директ и Google Adwords)</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Ведение SMM компаний</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Анализ конкурентов</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Индивидуальный маркетинг-план</p></li>
+                <li class="rates-card-list-li"><p class="rates-card-list__item">Скидка 15% на дополнительные услуги компании</p></li>
+              </ul>
+  
+              <div class="rates-card-price">
+                <span class="rates-card-price__price">79 000&#8381</span>
+                <span class="rates-card-price__value">в месяц</span>
+              </div>
+              <button class="btn rates-card__btn modal-open">Заказать!</button>
+            </div>
+  
+          </div> 
+        </div>
+        <!-- Стрелки -->
+        <div class="arrows rates__arrows">
+          <div class="arrows__left">
+            <img src="img/rates/arrow__left.png" alt="Стрелка влево">
+          </div>
+          <div class="arrows__right">
+            <img src="img/rates/arrow__right.png" alt="Стредка вправо">
+          </div>
+        </div>
+      </div>
+      <!-- rates-cards -->
+    </div>
+  </section>
+
+  <!-- Как мы работаем -->
+  <section class="work">
+    <div class="container">
+      <div class="header work-header">
+        <img src="img/rates/rates-title-left.png" alt="title" class="header__left">
+        <h2 class="header__title">Как мы работаем?</h2>
+        <img src="img/rates/rates-title-left.png" alt="title" class="header__right">
+      </div>
+      <!-- /.header -->
+      <div class="work-steps">
+        
+        <div class="work-step">
+          <div class="work-step-wrapper">
+            <div class="work-step-img">
+              <img src="img/work/step-1.png" alt="step" class="work-step-img__image-1"> 
+            </div>
+          </div>
+          <div class="work-step__text">Общение с менеджером по проекту</div>
+          <div class="work-arrow-up">
+            <img src="img/work/arrow32.png" alt="arrow32" class="arrow32-1">
+            <img src="img/work/arrow-up.png" alt="arrow" class="arrow">
+          </div>
+        </div>
+         
+        <div class="work-step">
+          <div class="work-step-wrapper">
+            <div class="work-step-img">
+              <img src="img/work/step-2.png" alt="step" class="work-step-img__image-2"> 
+            </div>
+          </div>
+          <div class="work-step__text">Изучение Вашего сайта и тематики</div>
+          <div class="work-arrow-down">
+            <img src="img/work/arrow32.png" alt="arrow32" class="arrow32-2">
+            <img src="img/work/arrow-down.png" alt="arrow" class="arrow">
+          </div>
+        </div>
+       
+        <div class="work-step">
+          <div class="work-step-wrapper">
+            <div class="work-step-img">
+              <img src="img/work/step-3.png" alt="step" class="work-step-img__image-3"> 
+            </div>
+          </div>
+          <div class="work-step__text">Подготовка индивиду- ального коммерческого предложения</div>
+          <div class="work-arrow-up">
+            <img src="img/work/arrow32.png" alt="arrow32" class="arrow32-3">
+            <img src="img/work/arrow-up.png" alt="arrow" class="arrow">
+          </div>
+        </div>
+
+        <div class="work-step">
+          <div class="work-step-wrapper">
+            <div class="work-step-img">
+              <img src="img/work/step-4.png" alt="step" class="work-step-img__image-4"> 
+            </div>
+          </div>
+          <div class="work-step__text">Подписание договора на продвижение Вашего сайта</div>
+          <div class="work-arrow-down">
+            <img src="img/work/arrow32.png" alt="arrow32" class="arrow32-4">
+            <img src="img/work/arrow-down.png" alt="arrow" class="arrow">
+          </div>
+        </div>
+
+        <div class="work-step">
+          <div class="work-step-wrapper">
+            <div class="work-step-img">
+              <img src="img/work/step-5.png" alt="step" class="work-step-img__image-5"> 
+            </div>
+          </div>
+          <div class="work-step__text">Проведение работ по продвижению Вашего сайта</div>
+          <div class="work-arrow-up">
+            <img src="img/work/arrow32.png" alt="arrow32" class="arrow32-5">
+            <img src="img/work/arrow-up.png" alt="arrow" class="arrow">
+          </div>
+        </div>
+
+        <div class="work-step">
+          <div class="work-step-wrapper">
+            <div class="work-step-img">
+              <img src="img/work/step-6.png" alt="step" class="work-step-img__image-6"> 
+            </div>
+          </div>
+          <div class="work-step__text">Рост позиций Вашего сайта по тематическим запросам</div>
+        </div>
+
+      <!-- /.work-steps -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.work -->
+
+  <!-- Контакты -->
+  <section class="contacts">
+    <div class="container">
+      <div class="header contacts-header">
+        <img src="img/rates/rates-title-left.png" alt="title" class="header__left">
+        <h2 class="header__title">Контакты</h2>
+        <img src="img/rates/rates-title-left.png" alt="title" class="header__right">
+      </div>
+      <div class="contacts-wrapper">
+
+        <div class="contacts-phone">
+          <a href="tel:+7-495-123-45-67" class="contacts-phone__number">+7-495-123-45-67</a>
+          <button class="btn contacts-phone__btn modal-open">Обратный звонок</button>
+        </div>
+
+        <div class="contacts-consult">
+          <p class="contacts__text">Получить консультацию прямо сейчас:</p>
+          <p class="contacts__text hide ">Бесплатная консультация:</p>
+          <div class="contacts-social">
+            <a href="#" class="navbar-contacts-item__link">
+              <i class=" navbar-contacts-item__icon fa fa-whatsapp fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="navbar-contacts-item__link">
+              <i class=" navbar-contacts-item__icon fa fa-telegram fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="navbar-contacts-item__link">
+              <i class=" navbar-contacts-item__icon fa fa-volume-control-phone fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="tel:+7 916 945-11-10" class="contacts-consult__number">+7 916 945-11-10</a>
+          </div>
+
+          <div class="contacts-mail">
+            <a href="#" class="navbar-contacts-item__link">
+              <i class=" navbar-contacts-item__icon fa fa-skype fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="contacts-mail__link">victoriouspro</a>
+            <a href="#" class="navbar-contacts-item__link">
+              <i class=" navbar-contacts-item__icon fa fa-envelope-open fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="contacts-mail__link">info@victorious.ru</a>
+          </div>
+        </div>
+
+
+        <div class="contacts-address">
+          <p class="contacts__text">
+            Мы находимся по адресу:
+          </p>
+          <a href="tel:+7-916-945-11-10" class="navbar-contacts-item__link">
+            <i class=" navbar-contacts-item__icon fa fa-map-marker fa-lg" aria-hidden="true"></i>
+          </a>
+          <p class="contacts-address__address">
+            111111, Москва, МКАД, 32-й километр, вл. 4, ТК «Лужайка», офис 47.3
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-logo">
+          <img src="img/footer/logo-footer.png" alt="footer-logo" class="footer-logo__img">
+        </div>
+        <div class="footer-copyright">
+          <p class="footer-copyright__text">&copy;2020, Victorious. Все права защищены.</p>
+          <div class="footer-links">
+            <a href="#" class="footer-links__link">Поисковое продвижение сайтов в Москве</a>
+            <a href="#" class="footer-links__link">Контекстная реклама</a>
+            <a href="#" class="footer-links__link">Разработка сайтов</a>
+            <span class="footer-liks__text">Оставляя заявки на нашем сайте,</ы> 
+            <a href="#" class="footer-links__link">ознакомьтесь с пользовательским соглашением</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+   
+  <script src="js/script.js"></script>  
+</body>
+
+</html>
