@@ -1,0 +1,23 @@
+{
+  "name": "site-victorious",
+  "version": "1.0.0",
+  "description": "Учебный сайт Victorious. HTML, SASS, JavaScript",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikiryanova/site-victorious.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ikiryanova/site-victorious/issues"
+  },
+  "homepage": "https://github.com/ikiryanova/site-victorious#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
